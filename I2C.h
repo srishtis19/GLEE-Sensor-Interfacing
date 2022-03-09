@@ -1,7 +1,7 @@
 #ifndef _I2C_
 #define _I2C_
 
-#define SCL_CLK 100000L										
+#define SCL_CLK 100000L
 #define BITRATE(TWSR)	((F_CPU/SCL_CLK)-16)/(2*pow(4,(TWSR&((1<<TWPS0)|(1<<TWPS1)))))
 
 //status codes
